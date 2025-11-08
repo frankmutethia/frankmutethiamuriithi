@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, ChevronDown } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import frankProfile from "@/assets/frank-profile.jpg";
 
 const Hero = () => {
   const scrollToSection = (id: string) => {
@@ -16,8 +17,8 @@ const Hero = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="flex justify-center md:justify-start animate-slide-in-left">
             <Avatar className="h-64 w-64 border-4 border-primary/20">
-              <AvatarImage src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop" />
-              <AvatarFallback className="text-6xl">YN</AvatarFallback>
+              <AvatarImage src={frankProfile} />
+              <AvatarFallback className="text-6xl">FK</AvatarFallback>
             </Avatar>
           </div>
 
