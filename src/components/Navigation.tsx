@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Sun } from "lucide-react";
+import { Sun, Moon } from "lucide-react";
+import { useTheme } from "next-themes";
 
 const Navigation = () => {
   const [scrolled, setScrolled] = useState(false);
+  const { theme, setTheme } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -45,8 +47,13 @@ const Navigation = () => {
                 {item}
               </button>
             ))}
-            <Button variant="ghost" size="icon" className="text-muted-foreground">
-              <Sun className="h-5 w-5" />
+            <Button 
+              variant="ghost" 
+              size="icon" 
+              className="text-muted-foreground"
+              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+            >
+              {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
             </Button>
           </div>
         </div>
