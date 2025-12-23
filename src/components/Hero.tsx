@@ -25,14 +25,13 @@ const Hero = () => {
           <div className="space-y-6 text-center md:text-left animate-slide-in-right">
             <p className="text-muted-foreground text-lg">Hi, I'm</p>
             <h1 className="text-5xl md:text-7xl font-bold text-foreground">
-              Your Name
+              Frank Mutethia Muriithi
             </h1>
             <h2 className="text-2xl md:text-3xl text-primary font-semibold">
-              Full Stack Software Engineer
+              A Full Stack Software Engineer
             </h2>
             <p className="text-lg text-muted-foreground max-w-xl">
-              I build exceptional digital experiences with the MERN stack, Flutter, and
-              modern web technologies. Specialized in creating scalable applications
+              I build exceptional digital products and offer Artificial Intelligence Consultancy. Specialize in creating scalable applications
               and beautiful user interfaces.
             </p>
 
@@ -46,13 +45,34 @@ const Hero = () => {
             </div>
 
             <div className="flex gap-4 justify-center md:justify-start pt-4">
-              <Button variant="ghost" size="icon" className="hover:text-primary">
+              <Button 
+                variant="ghost" 
+                size="icon" 
+                className="hover:text-primary"
+                aria-label="Visit my GitHub profile"
+                title="Visit my GitHub profile"
+                onClick={() => window.open("https://github.com/frankmutethia", "_blank", "noopener,noreferrer")}
+              >
                 <Github className="h-5 w-5" />
               </Button>
-              <Button variant="ghost" size="icon" className="hover:text-primary">
+              <Button 
+                variant="ghost" 
+                size="icon" 
+                className="hover:text-primary"
+                aria-label="Visit my LinkedIn profile"
+                title="Visit my LinkedIn profile"
+                onClick={() => window.open("https://www.linkedin.com/in/frank-mutethia", "_blank", "noopener,noreferrer")}
+              >
                 <Linkedin className="h-5 w-5" />
               </Button>
-              <Button variant="ghost" size="icon" className="hover:text-primary">
+              <Button 
+                variant="ghost" 
+                size="icon" 
+                className="hover:text-primary"
+                aria-label="Send me an email"
+                title="Send me an email"
+                onClick={() => window.open("mailto:frankmutethia81@gmail.com", "_blank", "noopener,noreferrer")}
+              >
                 <Mail className="h-5 w-5" />
               </Button>
             </div>
@@ -63,6 +83,8 @@ const Hero = () => {
       <button
         onClick={() => scrollToSection("about")}
         className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce"
+        aria-label="Scroll to about section"
+        title="Scroll to about section"
       >
         <ChevronDown className="h-8 w-8 text-muted-foreground" />
       </button>

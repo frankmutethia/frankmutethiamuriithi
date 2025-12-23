@@ -16,7 +16,7 @@ const About = () => {
       icon: Code2,
       title: "Full Stack Development",
       description:
-        "Expertise in MERN stack, building scalable web applications from database to deployment.",
+        "Full-stack developer specializing in the MERN stack (MongoDB, Express.js, React, and Node.js), building scalable, high-performance web applications from database design and backend APIs to responsive user interfaces and production deployment.",
     },
     {
       icon: Palette,
@@ -33,8 +33,8 @@ const About = () => {
   ];
 
   const stats = [
-    { value: "50+", label: "Projects Completed" },
-    { value: "5+", label: "Years Experience" },
+    { value: "30+", label: "Projects Completed" },
+    { value: "7+", label: "Years Experience" },
     { value: "30+", label: "Happy Clients" },
     { value: "10+", label: "Technologies" },
   ];
@@ -68,12 +68,28 @@ const About = () => {
           {expertise.map((item, index) => (
             <Card
               key={index}
-              className="p-8 bg-card border-card-border hover:border-primary/50 transition-all duration-300 animate-slide-up"
-              style={{ animationDelay: `${index * 0.1}s` }}
+              className="group overflow-hidden bg-card border-card-border transition-all duration-500 animate-slide-up hover:shadow-2xl hover:-translate-y-2 hover:border-primary/30 cursor-pointer"
+              style={{ animationDelay: `${index * 0.1}s` } as React.CSSProperties}
             >
-              <item.icon className="h-12 w-12 text-primary mb-4" />
-              <h3 className="text-xl font-bold text-foreground mb-2">{item.title}</h3>
-              <p className="text-muted-foreground">{item.description}</p>
+              {/* Content section */}
+              <div className="p-8">
+                {/* Icon section */}
+                <div className="flex justify-center mb-6">
+                  <div className="relative">
+                    <div className="absolute inset-0 bg-primary/20 rounded-full blur-xl group-hover:bg-primary/30 transition-colors duration-500"></div>
+                    <div className="relative bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl p-5 border border-primary/20 group-hover:border-primary/40 transition-all duration-500">
+                      <item.icon className="h-14 w-14 text-primary group-hover:scale-110 transition-transform duration-500" />
+                    </div>
+                  </div>
+                </div>
+                
+                <h3 className="text-xl font-bold text-foreground mb-4 text-center group-hover:text-primary transition-colors duration-300">
+                  {item.title}
+                </h3>
+                <p className="text-muted-foreground text-center leading-relaxed group-hover:text-foreground/90 transition-colors duration-300">
+                  {item.description}
+                </p>
+              </div>
             </Card>
           ))}
         </div>

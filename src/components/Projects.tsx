@@ -50,48 +50,6 @@ const Projects = () => {
       tags: ["React", "TypeScript", "Movie API", "Responsive Design"],
       link: "https://bingeflix-eight.vercel.app/",
     },
-    {
-      title: "E-Commerce Platform",
-      description:
-        "A full-stack e-commerce application with payment integration, admin dashboard, and real-time inventory management.",
-      image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=600&h=400&fit=crop",
-      tags: ["React", "Node.js", "MongoDB", "Express", "Stripe"],
-    },
-    {
-      title: "Task Management App",
-      description:
-        "Mobile-first task management application with team collaboration features, built with Flutter for iOS and Android.",
-      image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=600&h=400&fit=crop",
-      tags: ["Flutter", "Dart", "Firebase", "REST API"],
-    },
-    {
-      title: "Social Media Dashboard",
-      description:
-        "Analytics dashboard for social media management with real-time data visualization and automated reporting.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
-      tags: ["React", "TypeScript", "Node.js", "Chart.js"],
-    },
-    {
-      title: "Weather Forecast App",
-      description:
-        "Real-time weather application with location-based forecasts and interactive maps for weather patterns.",
-      image: "https://images.unsplash.com/photo-1592210454359-9043f067919b?w=600&h=400&fit=crop",
-      tags: ["React", "TypeScript", "Weather API", "Mapbox"],
-    },
-    {
-      title: "Portfolio Builder",
-      description:
-        "A drag-and-drop portfolio builder with customizable templates and one-click deployment features.",
-      image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&h=400&fit=crop",
-      tags: ["React", "Tailwind CSS", "MongoDB", "Express"],
-    },
-    {
-      title: "Chat Application",
-      description:
-        "Real-time messaging platform with group chats, file sharing, and end-to-end encryption.",
-      image: "https://images.unsplash.com/photo-1611746872915-64382b5c76da?w=600&h=400&fit=crop",
-      tags: ["React", "Socket.io", "Node.js", "MongoDB"],
-    },
   ];
 
   return (
